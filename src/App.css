@@ -1,0 +1,87 @@
+.container {
+  margin: 0 auto;
+  max-width: 600px;
+  padding: 2rem;
+  text-align: center;
+}
+
+.bloc-tabs {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0;
+}
+
+.tabs {
+  background: lightgray;
+  border: 1px solid rgba(0, 0, 0, 0.274);
+  cursor: pointer;
+  display: inline-block;
+  flex: 1;
+  padding: 10px 20px;
+  position: relative;
+  text-align: center;
+}
+
+.tabs:not(:last-child) {
+  /* margin-right: 2px; */
+  border-right: none;
+}
+
+.tabs:hover {
+  background: darkgray;
+}
+
+.active-tabs:hover {
+  background: white;
+  cursor: auto;
+}
+
+.active-tabs::before {
+  background-color: cornflowerblue; /* Color of the top border */
+  content: "";
+  height: 4px; /* Height of the top border */
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.active-tabs {
+  background-color: white; /* Color of the top border */
+  border-bottom: none;
+}
+
+.content-tabs {
+  background: white;
+  border: 1px solid rgba(0, 0, 0, 0.274);
+  border-top: none;
+  padding: 20px;
+}
+
+.content {
+  display: none;
+  text-align: left;
+  width: 100%;
+}
+
+.content h2 {
+  margin: 0;
+  padding: 0px 0 5px 0px;
+}
+
+.content hr {
+  background: grey;
+  border: none;
+  height: 1px;
+  margin-bottom: 5px;
+  margin-left: 0;
+  width: 100px;
+}
+
+.content p {
+  width: 100%;
+}
+
+.active-content {
+  display: block;
+}
